@@ -4,10 +4,12 @@ import styled from "styled-components";
 // Styled Components
 export const HeaderS = styled.header`
 	background-color: var(--clr-primary);
+	position: relative;
+	z-index: 9999;
 `;
 
 export const NavS = styled.nav`
-	height: 5rem;
+	height: var(--header-height);
 	width: min(85rem, 90%);
 	margin-inline: auto;
 	display: flex;

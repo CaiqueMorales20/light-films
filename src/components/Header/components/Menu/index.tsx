@@ -6,16 +6,16 @@ export const Menu = () => {
 	return (
 		<MenuS>
 			<MenuItem>
-				<MenuLink>Home</MenuLink>
+				<MenuLink href="">Home</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink>Clientes</MenuLink>
+				<MenuLink href="">Clientes</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink>Quem somos</MenuLink>
+				<MenuLink href="">Quem somos</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink>Contato</MenuLink>
+				<MenuLink href="">Contato</MenuLink>
 			</MenuItem>
 		</MenuS>
 	);

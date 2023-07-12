@@ -15,6 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     --fz-normal: 1rem;
 
     --ff-body: 'Montserrat', sans-serif;
+
+    // ===== Sizes ===== //
+    --header-height: 5rem;
   }
 
   // ==================== HTML Reseting ==================== //
@@ -24,7 +27,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    line-height: 1.4;
     font-family: var(--ff-body);
   }
   ul{
@@ -34,5 +36,8 @@ export const GlobalStyle = createGlobalStyle`
   img{
     width: 100%;
     height: auto;
+  }
+  a{
+    text-decoration: none;
   }
 `;
