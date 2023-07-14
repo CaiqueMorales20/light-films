@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Styled Components
 export const HeaderS = styled.header`
-	background-color: var(--clr-primary);
+	background-color: var(--clr-primary-400);
 	position: relative;
 	z-index: 9999;
 `;

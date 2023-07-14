@@ -6,13 +6,24 @@ export const GlobalStyle = createGlobalStyle`
   // ==================== CSS Variables ==================== //
   :root{
     // ===== Typography ===== //
-    --clr-primary: #1b3748;
+    --clr-primary-500: #1C3A4B;
+    --clr-primary-400: #1b3748;
+
     --clr-neutral-400: #ffffff;
 
     // ===== Typography ===== //
     --fz-largest: 3.625rem;
+    --fz-larger: 2rem;
     --fz-large: 1.5rem;
     --fz-normal: 1rem;
+
+    --fw-black: 900;
+    --fw-extrabold: 800;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-normal: 400;
+    --fw-light: 300;
 
     --ff-body: 'Montserrat', sans-serif;
 

@@ -9,7 +9,6 @@ export const HeroS = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	isolation: isolate;
 	flex-direction: column;
 	gap: 1.25rem;
 `;
