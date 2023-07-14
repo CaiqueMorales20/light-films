@@ -15,7 +15,7 @@ export const AreaS = styled.section`
 export const Title = styled.h1`
 	color: var(--clr-primary-500);
 	font-weight: var(--fw-bold);
-	font-size: var(--fz-larger);
+	font-size: var(--fz-large);
 	text-transform: uppercase;
 	text-align: center;
 `;

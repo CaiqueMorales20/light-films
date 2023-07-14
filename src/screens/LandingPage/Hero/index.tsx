@@ -1,5 +1,5 @@
 // Styled Components
-import { HeroS, HeroBg, Title, Subtitle } from "./style";
+import { HeroS, HeroBg, Title, Subtitle, Content } from "./style";
 
 // Image
 import HeroBgImg from "../../../assets/img/hero/banner.jpg";
@@ -10,12 +10,14 @@ export const Hero = () => {
 	return (
 		<HeroS>
 			<HeroBg src={HeroBgImg} />
-			<Title>
-				Proteção e Estilo em um lugar: Insulfilm Arquitetônico de Qualidade
-			</Title>
-			<Subtitle>
-				Controle a Luz, a Temperatura e a Privacidade sem abrir mão do Design
-			</Subtitle>
+			<Content>
+				<Title>
+					Proteção e Estilo em um lugar: Insulfilm Arquitetônico de Qualidade
+				</Title>
+				<Subtitle>
+					Controle a Luz, a Temperatura e a Privacidade sem abrir mão do Design
+				</Subtitle>
+			</Content>
 		</HeroS>
 	);
 };

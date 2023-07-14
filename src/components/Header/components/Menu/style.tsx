@@ -9,6 +9,8 @@ export const MenuS = styled.ul`
 export const MenuItem = styled.li``;
 
 export const MenuLink = styled.a`
-	font-size: var(--fz-normal);
+	font-size: var(--fz-small);
 	color: var(--clr-neutral-400);
+	font-weight: var(--fw-medium);
+	text-transform: uppercase;
 `;

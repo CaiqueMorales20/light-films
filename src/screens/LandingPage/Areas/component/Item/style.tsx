@@ -12,7 +12,7 @@ export const ItemS = styled.div`
 export const Image = styled.img``;
 
 export const Title = styled.h2`
-	font-size: var(--fz-normal);
+	font-size: var(--fz-small);
 	color: var(--clr-primary-500);
 	text-transform: uppercase;
 `;
