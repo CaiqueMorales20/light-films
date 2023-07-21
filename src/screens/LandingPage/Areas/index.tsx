@@ -1,5 +1,6 @@
 // Imported Components
 import { ItemList } from "./component/ItemList";
+import { Element } from "react-scroll";
 
 // Styled Components
 import { AreaS, Title } from "./style";
@@ -8,9 +9,11 @@ import { AreaS, Title } from "./style";
 export const Areas = () => {
 	// Rendering
 	return (
-		<AreaS>
-			<Title>Áreas de aplicação</Title>
-			<ItemList />
-		</AreaS>
+		<Element name="work">
+			<AreaS>
+				<Title>Áreas de aplicação</Title>
+				<ItemList />
+			</AreaS>
+		</Element>
 	);
 };

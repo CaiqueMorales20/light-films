@@ -6,16 +6,34 @@ export const Menu = () => {
 	return (
 		<MenuS>
 			<MenuItem>
-				<MenuLink href="">Home</MenuLink>
+				<MenuLink to="/" smooth={true}>
+					Home
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink href="">Clientes</MenuLink>
+				<MenuLink to="work" smooth={true}>
+					Atuação
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink href="">Quem somos</MenuLink>
+				<MenuLink to="about" smooth={true}>
+					Quem somos
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink href="">Contato</MenuLink>
+				<MenuLink to="projcts" smooth={true}>
+					Projetos
+				</MenuLink>
+			</MenuItem>
+			<MenuItem>
+				<MenuLink to="clients" smooth={true}>
+					Clientes
+				</MenuLink>
+			</MenuItem>
+			<MenuItem>
+				<MenuLink to="contact" smooth={true}>
+					Contato
+				</MenuLink>
 			</MenuItem>
 		</MenuS>
 	);
