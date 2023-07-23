@@ -1,11 +1,15 @@
+// Styled Components
 import { MenuItem, MenuLink, MenuS } from "./style";
 
-// Functional Components
-export const Menu = () => {
-	// Rendering
+// Types
+type Props = {
+	openedMenu: boolean;
+};
+
+// Functional Component
+export default function Menu({ openedMenu }: Props) {
 	return (
-		<MenuS>
-			{}
+		<MenuS openedMenu={openedMenu}>
 			<MenuItem>
 				<MenuLink to="/" smooth={true}>
 					Home
@@ -38,4 +42,4 @@ export const Menu = () => {
 			</MenuItem>
 		</MenuS>
 	);
-};
+}
