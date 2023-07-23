@@ -5,6 +5,7 @@ export const Menu = () => {
 	// Rendering
 	return (
 		<MenuS>
+			{}
 			<MenuItem>
 				<MenuLink to="/" smooth={true}>
 					Home
