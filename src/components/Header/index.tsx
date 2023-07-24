@@ -1,5 +1,5 @@
 // Imports
-import { useState } from "react";
+import { useState, createContext } from "react";
 import { useMediaQuery } from "../../utils/hooks/useMediaQuery";
 
 // Imported Components
@@ -8,6 +8,10 @@ import Menu from "./components/Menu";
 
 // Styled Components
 import { HeaderS, LogoS, NavS } from "./style";
+import { HeaderType } from "./type";
+
+// Context
+export const HeaderContext = createContext<null | HeaderType>(null);
 
 // Functional Component
 export const Header = () => {
@@ -17,12 +21,14 @@ export const Header = () => {
 
 	// Rendering
 	return (
-		<HeaderS>
-			<NavS>
-				<LogoS>Light Films</LogoS>
-				<Menu openedMenu={openedMenu} />
-				{mobile && <Hamburger onClick={() => setOpenedMenu(!openedMenu)} />}
-			</NavS>
-		</HeaderS>
+		<HeaderContext.Provider value={{ openedMenu, setOpenedMenu }}>
+			<HeaderS>
+				<NavS>
+					<LogoS>Light Films</LogoS>
+					<Menu />
+					{mobile && <Hamburger onClick={() => setOpenedMenu(!openedMenu)} />}
+				</NavS>
+			</HeaderS>
+		</HeaderContext.Provider>
 	);
 };

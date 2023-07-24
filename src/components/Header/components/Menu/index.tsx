@@ -1,15 +1,26 @@
+// Imports
+import { useContext, useRef } from "react";
+import { useOnClickOutside } from "../../../../utils/hooks/useOnClickOutside";
+
 // Styled Components
 import { MenuItem, MenuLink, MenuS } from "./style";
 
-// Types
-type Props = {
-	openedMenu: boolean;
-};
+// Context
+import { HeaderContext } from "../..";
+import { HeaderType } from "../../type";
 
 // Functional Component
-export default function Menu({ openedMenu }: Props) {
+export default function Menu() {
+	// Variables
+	const { openedMenu, setOpenedMenu } = useContext(HeaderContext) as HeaderType;
+	const menuRef = useRef(null);
+
+	// Functions
+	useOnClickOutside(menuRef, () => setOpenedMenu(false));
+
+	// Rendering
 	return (
-		<MenuS openedMenu={openedMenu}>
+		<MenuS ref={menuRef} openedMenu={openedMenu}>
 			<MenuItem>
 				<MenuLink to="/" smooth={true}>
 					Home
