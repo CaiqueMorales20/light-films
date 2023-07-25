@@ -40,10 +40,10 @@ export default function Menu() {
 				<MenuItem>
 					<MenuLink
 						onClick={() => setOpenedMenu(false)}
-						to="about"
+						to="benefits"
 						smooth={true}
 					>
-						Quem somos
+						Benefícios
 					</MenuLink>
 				</MenuItem>
 				<MenuItem>

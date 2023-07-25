@@ -10,6 +10,10 @@ export const AreaS = styled.section`
 	flex-direction: column;
 	align-items: center;
 	gap: 5rem;
+
+	@media screen and (max-width: 768px) {
+		gap: 2rem;
+	}
 `;
 
 export const Title = styled.h1`

@@ -1,6 +1,7 @@
 // Imported Components
 import { Hero } from "./Hero";
 import { Areas } from "./Areas";
+import Benefits from "./Benefits";
 
 // Functional Component
 export const LandingPage = () => {
@@ -9,6 +10,7 @@ export const LandingPage = () => {
 		<>
 			<Hero />
 			<Areas />
+			<Benefits />
 		</>
 	);
 };

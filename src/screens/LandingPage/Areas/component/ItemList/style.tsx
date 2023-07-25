@@ -16,6 +16,6 @@ export const ItemListS = styled.div`
 		--columns-number: 3;
 	}
 	@media screen and (max-width: 568px) {
-		--columns-number: 2;
+		--columns-number: 1;
 	}
 `;
