@@ -1,7 +1,7 @@
 // Imports
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, styled } from "styled-components";
 
-// Styled Components
+// ======================================== Global Style ======================================== //
 export const GlobalStyle = createGlobalStyle`
   // ==================== CSS Variables ==================== //
   :root{
@@ -42,6 +42,10 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: var(--ff-body);
   }
+  body.menu-open{
+    height: 100vh;
+    overflow: hidden;
+  }
   ul{
     list-style: none;
     display: flex;
@@ -53,4 +57,10 @@ export const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
+`;
+
+// ======================================== Styled Components ======================================== //
+export const View = styled.div`
+	height: 100vh;
+	overflow: hidden;
 `;

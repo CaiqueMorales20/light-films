@@ -3,7 +3,7 @@ import { useContext, useRef } from "react";
 import { useOnClickOutside } from "../../../../utils/hooks/useOnClickOutside";
 
 // Styled Components
-import { MenuItem, MenuLink, MenuS } from "./style";
+import { MenuItem, MenuLink, MenuS, Overlay } from "./style";
 
 // Context
 import { HeaderContext } from "../..";
@@ -20,37 +20,60 @@ export default function Menu() {
 
 	// Rendering
 	return (
-		<MenuS ref={menuRef} openedMenu={openedMenu}>
-			<MenuItem>
-				<MenuLink to="/" smooth={true}>
-					Home
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink to="work" smooth={true}>
-					Atuação
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink to="about" smooth={true}>
-					Quem somos
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink to="projcts" smooth={true}>
-					Projetos
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink to="clients" smooth={true}>
-					Clientes
-				</MenuLink>
-			</MenuItem>
-			<MenuItem>
-				<MenuLink to="contact" smooth={true}>
-					Contato
-				</MenuLink>
-			</MenuItem>
-		</MenuS>
+		<>
+			<Overlay openedMenu={openedMenu} />
+			<MenuS ref={menuRef} openedMenu={openedMenu}>
+				<MenuItem>
+					<MenuLink onClick={() => setOpenedMenu(false)} to="/" smooth={true}>
+						Home
+					</MenuLink>
+				</MenuItem>
+				<MenuItem>
+					<MenuLink
+						onClick={() => setOpenedMenu(false)}
+						to="work"
+						smooth={true}
+					>
+						Atuação
+					</MenuLink>
+				</MenuItem>
+				<MenuItem>
+					<MenuLink
+						onClick={() => setOpenedMenu(false)}
+						to="about"
+						smooth={true}
+					>
+						Quem somos
+					</MenuLink>
+				</MenuItem>
+				<MenuItem>
+					<MenuLink
+						onClick={() => setOpenedMenu(false)}
+						to="projcts"
+						smooth={true}
+					>
+						Projetos
+					</MenuLink>
+				</MenuItem>
+				<MenuItem>
+					<MenuLink
+						onClick={() => setOpenedMenu(false)}
+						to="clients"
+						smooth={true}
+					>
+						Clientes
+					</MenuLink>
+				</MenuItem>
+				<MenuItem>
+					<MenuLink
+						onClick={() => setOpenedMenu(false)}
+						to="contact"
+						smooth={true}
+					>
+						Contato
+					</MenuLink>
+				</MenuItem>
+			</MenuS>
+		</>
 	);
 }

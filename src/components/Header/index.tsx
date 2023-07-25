@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 // Styled Components
 import { HeaderS, LogoS, NavS } from "./style";
 import { HeaderType } from "./type";
+import { useUpdateEffect } from "../../utils/hooks/useUpdateEffect";
 
 // Context
 export const HeaderContext = createContext<null | HeaderType>(null);
