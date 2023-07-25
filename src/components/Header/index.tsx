@@ -20,6 +20,11 @@ export const Header = () => {
 	const mobile = useMediaQuery("(max-width: 768px)");
 	const [openedMenu, setOpenedMenu] = useState(false);
 
+	// Functions
+	useUpdateEffect(() => {
+		document.body.classList.toggle("menu-open");
+	}, [openedMenu]);
+
 	// Rendering
 	return (
 		<HeaderContext.Provider value={{ openedMenu, setOpenedMenu }}>
