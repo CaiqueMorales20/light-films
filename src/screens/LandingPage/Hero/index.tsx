@@ -1,15 +1,11 @@
 // Styled Components
-import { HeroS, HeroBg, Title, Subtitle, Content } from "./style";
-
-// Image
-import HeroBgImg from "../../../assets/img/hero/banner.jpg";
+import { HeroS, Title, Subtitle, Content } from "./style";
 
 // Functional Component
 export const Hero = () => {
 	// Rendering
 	return (
 		<HeroS>
-			<HeroBg src={HeroBgImg} />
 			<Content>
 				<Title>
 					Proteção e Estilo em um lugar: Insulfilm Arquitetônico de Qualidade

@@ -1,20 +1,19 @@
 // Imports
 import styled from "styled-components";
 
+// Image
+import HeroBgImg from "../../../assets/img/hero/banner.jpg";
+
 // Styled Components
 export const HeroS = styled.section`
 	height: 100vh;
 	width: 100%;
 	margin-top: calc(var(--header-height) * -1);
 	display: grid;
+	background-image: url(${HeroBgImg});
+	background-size: cover;
+	background-position: center;
 	place-items: center;
-`;
-
-export const HeroBg = styled.img`
-	height: 100vh;
-	position: absolute;
-	inset: 0;
-	z-index: -1;
 `;
 
 export const Content = styled.div`
