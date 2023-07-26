@@ -31,6 +31,8 @@ export const GlobalStyle = createGlobalStyle`
 
     // ===== Sizes ===== //
     --header-height: 5rem;
+
+    --section-padding: 6rem;
   }
 
   // ==================== HTML Reseting ==================== //

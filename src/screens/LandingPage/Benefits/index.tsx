@@ -1,3 +1,6 @@
+// Imports
+import { Element } from "react-scroll";
+
 // Styled Components
 import {
 	BenefitsContent,
@@ -10,7 +13,6 @@ import {
 
 // Images
 import BenefitsImg from "../../../assets/img/benefits/office-building.png";
-import { Element } from "react-scroll";
 
 // Functional Component
 export default function Benefits() {

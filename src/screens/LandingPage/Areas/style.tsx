@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const AreaS = styled.section`
 	width: min(100em, 90%);
 	margin-inline: auto;
-	padding-block: 5em;
+	padding-block: var(--section-padding);
 	display: flex;
 	flex-direction: column;
 	align-items: center;

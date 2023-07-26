@@ -9,13 +9,13 @@ export const BenefitsS = styled.section`
 export const BenefitsContent = styled.div`
 	width: min(100em, 90%);
 	margin-inline: auto;
-	padding-block: 5em;
+	padding-block: var(--section-padding);
 	display: flex;
 	align-items: center;
-	gap: 4rem;
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
+		gap: 4rem;
 	}
 
 	& > * {
@@ -48,8 +48,4 @@ export const Image = styled.img`
 	width: auto;
 	max-width: 100%;
 	object-fit: contain;
-
-	@media screen and (max-width: 768px) {
-		max-width: 60%;
-	}
 `;
