@@ -15,7 +15,6 @@ export const BenefitsContent = styled.div`
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
-		gap: 4rem;
 	}
 
 	& > * {

@@ -49,7 +49,7 @@ export default function Menu() {
 				<MenuItem>
 					<MenuLink
 						onClick={() => setOpenedMenu(false)}
-						to="projcts"
+						to="projects"
 						smooth={true}
 					>
 						Projetos

@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     // ===== Sizes ===== //
     --header-height: 5rem;
 
-    --section-padding: 6rem;
+    --section-padding: 7rem;
   }
 
   // ==================== HTML Reseting ==================== //

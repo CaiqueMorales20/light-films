@@ -36,7 +36,7 @@ export default function Benefits() {
 							lugar mais agradável, eficiente e seguro.
 						</Text>
 					</TextContainer>
-					<Image src={BenefitsImg} />
+					<div />
 				</BenefitsContent>
 			</BenefitsS>
 		</Element>
