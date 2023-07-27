@@ -3,7 +3,8 @@ import { ItemList } from "./component/ItemList";
 import { Element } from "react-scroll";
 
 // Styled Components
-import { AreaS, Title } from "./style";
+import { AreaS } from "./style";
+import { SectionTitle } from "../../../global/GlobalStyle";
 
 // Functional Component
 export const Areas = () => {
@@ -11,7 +12,7 @@ export const Areas = () => {
 	return (
 		<Element name="work">
 			<AreaS>
-				<Title>Áreas de aplicação</Title>
+				<SectionTitle>Áreas de aplicação</SectionTitle>
 				<ItemList />
 			</AreaS>
 		</Element>
