@@ -21,7 +21,7 @@ export default function Menu() {
 	// Rendering
 	return (
 		<>
-			<Overlay openedMenu={openedMenu} />
+			{openedMenu && <Overlay openedMenu={openedMenu} />}
 			<MenuS ref={menuRef} openedMenu={openedMenu}>
 				<MenuItem>
 					<MenuLink onClick={() => setOpenedMenu(false)} to="/" smooth={true}>
