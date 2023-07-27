@@ -41,10 +41,3 @@ export const Text = styled.p`
 	letter-spacing: 0.01em;
 	line-height: 1.5;
 `;
-
-export const Image = styled.img`
-	height: 20rem;
-	width: auto;
-	max-width: 100%;
-	object-fit: contain;
-`;
