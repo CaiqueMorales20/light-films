@@ -9,11 +9,14 @@ export const HeroS = styled.section`
 	height: 100vh;
 	width: 100%;
 	margin-top: calc(var(--header-height) * -1);
-	display: grid;
+	display: flex;
 	background-image: url(${HeroBgImg});
 	background-size: cover;
 	background-position: center;
-	place-items: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
 `;
 
 export const Content = styled.div`

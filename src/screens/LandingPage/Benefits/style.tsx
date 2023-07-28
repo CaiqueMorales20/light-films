@@ -12,6 +12,7 @@ export const BenefitsContent = styled.div`
 	padding-block: var(--section-padding);
 	display: flex;
 	align-items: center;
+	gap: 4rem;
 
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
@@ -40,4 +41,12 @@ export const Text = styled.p`
 	text-align: justify;
 	letter-spacing: 0.01em;
 	line-height: 1.5;
+`;
+
+export const ImageContainer = styled.div``;
+
+export const Image = styled.img`
+	border-radius: 1em;
+	width: 100%;
+	height: 100%;
 `;

@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { Areas } from "./Areas";
 import Benefits from "./Benefits";
 import Projects from "./Projects";
+import Depositions from "./Depositions";
 
 // Functional Component
 export const LandingPage = () => {
@@ -13,6 +14,7 @@ export const LandingPage = () => {
 			<Areas />
 			<Benefits />
 			<Projects />
+			<Depositions />
 		</>
 	);
 };

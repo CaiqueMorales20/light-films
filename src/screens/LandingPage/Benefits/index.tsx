@@ -5,12 +5,15 @@ import { Element } from "react-scroll";
 import {
 	BenefitsContent,
 	BenefitsS,
+	Image,
+	ImageContainer,
 	Text,
 	TextContainer,
 	Title,
 } from "./style";
 
 // Images
+import BenefitsImg from "../../../assets/img/benefits/building.jpg";
 
 // Functional Component
 export default function Benefits() {
@@ -34,7 +37,9 @@ export default function Benefits() {
 							lugar mais agradável, eficiente e seguro.
 						</Text>
 					</TextContainer>
-					<div />
+					<ImageContainer>
+						<Image src={BenefitsImg} />
+					</ImageContainer>
 				</BenefitsContent>
 			</BenefitsS>
 		</Element>

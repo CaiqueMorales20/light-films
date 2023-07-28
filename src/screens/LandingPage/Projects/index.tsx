@@ -31,6 +31,7 @@ import SlideImg5 from "../../../assets/img/projects/lacerda.png";
 import SlideImg6 from "../../../assets/img/projects/riachuelo.png";
 import ArrowPrev from "../../../assets/img/projects/arrow-prev.svg";
 import ArrowNext from "../../../assets/img/projects/arrow-next.svg";
+import Button from "../../../components/Button";
 
 // Functional Component
 export default function Projects() {
@@ -95,6 +96,7 @@ export default function Projects() {
 					</Swiper>
 					<Arrow src={ArrowNext} onClick={() => handleNextSlide()} />
 				</SliderS>
+				<Button text="Ver projetos" reversed />
 			</ProjectsS>
 		</Element>
 	);

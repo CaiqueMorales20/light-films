@@ -8,10 +8,12 @@ export const ProjectsS = styled.section`
 	padding-block: var(--section-padding);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 4rem;
 `;
 
 export const SliderS = styled.div`
+	width: 100%;
 	position: relative;
 `;
 

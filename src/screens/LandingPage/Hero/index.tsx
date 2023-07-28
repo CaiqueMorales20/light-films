@@ -1,4 +1,6 @@
 // Styled Components
+import { Link } from "react-scroll";
+import Button from "../../../components/Button";
 import { HeroS, Title, Subtitle, Content } from "./style";
 
 // Functional Component
@@ -14,6 +16,9 @@ export const Hero = () => {
 					Controle a Luz, a Temperatura e a Privacidade sem abrir mão do Design
 				</Subtitle>
 			</Content>
+			<Link to="work" smooth>
+				<Button text="Ver mais" />
+			</Link>
 		</HeroS>
 	);
 };
