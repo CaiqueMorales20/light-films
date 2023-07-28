@@ -11,9 +11,10 @@ import {
 // Imported Components
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Button from "../../../components/Button";
+import SectionTitle from "../../../components/SectionTitle";
 
 // Styled Components
-import { SectionTitle } from "../../../global/GlobalStyle";
 import { Arrow, ProjectsS, SliderS } from "./style";
 
 // Import Swiper styles
@@ -31,7 +32,6 @@ import SlideImg5 from "../../../assets/img/projects/lacerda.png";
 import SlideImg6 from "../../../assets/img/projects/riachuelo.png";
 import ArrowPrev from "../../../assets/img/projects/arrow-prev.svg";
 import ArrowNext from "../../../assets/img/projects/arrow-next.svg";
-import Button from "../../../components/Button";
 
 // Functional Component
 export default function Projects() {
@@ -52,7 +52,7 @@ export default function Projects() {
 	return (
 		<Element name="projects">
 			<ProjectsS>
-				<SectionTitle>Alguns de nossos projetos</SectionTitle>
+				<SectionTitle text="Nosso projetos" />
 				<SliderS>
 					<Arrow src={ArrowPrev} onClick={() => handlePrevSlide()} />
 					<Swiper

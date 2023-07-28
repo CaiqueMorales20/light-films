@@ -66,11 +66,3 @@ export const View = styled.div`
 	height: 100vh;
 	overflow: hidden;
 `;
-
-export const SectionTitle = styled.h1`
-	color: var(--clr-primary-500);
-	font-weight: var(--fw-bold);
-	font-size: var(--fz-large);
-	text-transform: uppercase;
-	text-align: center;
-`;
