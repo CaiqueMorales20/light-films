@@ -5,17 +5,17 @@ import { Line, LineContainer, SectionTitleS, Text } from "./style";
 import { SectionType } from "./types";
 
 // Functional Component
-export default function SectionTitle({ text }: SectionType) {
+export default function SectionTitle({ text, reversed }: SectionType) {
 	return (
 		<SectionTitleS>
 			<LineContainer>
-				<Line />
-				<Line />
+				<Line reversed={reversed} />
+				<Line reversed={reversed} />
 			</LineContainer>
-			<Text>{text}</Text>
+			<Text reversed={reversed}>{text}</Text>
 			<LineContainer>
-				<Line />
-				<Line />
+				<Line reversed={reversed} />
+				<Line reversed={reversed} />
 			</LineContainer>
 		</SectionTitleS>
 	);

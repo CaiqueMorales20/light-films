@@ -41,6 +41,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  html,
+  body{
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   body{
     font-family: var(--ff-body);
   }

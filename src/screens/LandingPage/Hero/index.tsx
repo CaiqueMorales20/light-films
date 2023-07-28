@@ -16,7 +16,7 @@ export const Hero = () => {
 					Controle a Luz, a Temperatura e a Privacidade sem abrir mão do Design
 				</Subtitle>
 			</Content>
-			<Link to="work" smooth>
+			<Link to="work" smooth offset={70}>
 				<Button text="Ver mais" />
 			</Link>
 		</HeroS>

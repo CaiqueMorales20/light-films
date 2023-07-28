@@ -52,7 +52,7 @@ export default function Projects() {
 	return (
 		<Element name="projects">
 			<ProjectsS>
-				<SectionTitle text="Nosso projetos" />
+				<SectionTitle text="Nossos projetos" />
 				<SliderS>
 					<Arrow src={ArrowPrev} onClick={() => handlePrevSlide()} />
 					<Swiper

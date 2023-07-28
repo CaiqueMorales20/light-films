@@ -33,6 +33,7 @@ export default function Menu() {
 						onClick={() => setOpenedMenu(false)}
 						to="work"
 						smooth={true}
+						offset={70}
 					>
 						Atuação
 					</MenuLink>
@@ -42,6 +43,7 @@ export default function Menu() {
 						onClick={() => setOpenedMenu(false)}
 						to="benefits"
 						smooth={true}
+						offset={70}
 					>
 						Benefícios
 					</MenuLink>
@@ -51,6 +53,7 @@ export default function Menu() {
 						onClick={() => setOpenedMenu(false)}
 						to="projects"
 						smooth={true}
+						offset={70}
 					>
 						Projetos
 					</MenuLink>

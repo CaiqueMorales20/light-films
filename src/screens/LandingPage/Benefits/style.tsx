@@ -3,13 +3,16 @@ import { styled } from "styled-components";
 
 // Styled Components
 export const BenefitsS = styled.section`
+	padding-block: var(--section-padding);
 	background-color: var(--clr-primary-400);
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
 `;
 
 export const BenefitsContent = styled.div`
 	width: min(100em, 90%);
 	margin-inline: auto;
-	padding-block: var(--section-padding);
 	display: flex;
 	align-items: center;
 	gap: 4rem;

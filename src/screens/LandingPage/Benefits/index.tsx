@@ -14,6 +14,7 @@ import {
 
 // Images
 import BenefitsImg from "../../../assets/img/benefits/building.jpg";
+import SectionTitle from "../../../components/SectionTitle";
 
 // Functional Component
 export default function Benefits() {
@@ -21,6 +22,7 @@ export default function Benefits() {
 	return (
 		<Element name="benefits">
 			<BenefitsS>
+				<SectionTitle text="Benefícios" reversed />
 				<BenefitsContent>
 					<TextContainer>
 						<Title>
