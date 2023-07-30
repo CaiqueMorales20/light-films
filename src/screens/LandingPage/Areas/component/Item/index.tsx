@@ -1,5 +1,5 @@
 // Styled Component
-import { ItemS, Image, Title } from "./style";
+import { ItemS, Image, Title, ImageContainer } from "./style";
 
 // Types
 import { ItemProps } from "./type";
@@ -9,7 +9,9 @@ export const Item = (props: ItemProps) => {
 	// Rendering
 	return (
 		<ItemS>
-			<Image src={props.image} alt={props.title} />
+			<ImageContainer>
+				<Image src={props.image} alt={props.title} />
+			</ImageContainer>
 			<Title>{props.title}</Title>
 		</ItemS>
 	);

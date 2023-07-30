@@ -9,7 +9,24 @@ export const ItemS = styled.div`
 	gap: 1em;
 `;
 
-export const Image = styled.img``;
+export const ImageContainer = styled.div`
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	aspect-ratio: 2 /1;
+	position: relative;
+
+	&:hover > * {
+		scale: 1.1;
+	}
+`;
+
+export const Image = styled.img`
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+`;
 
 export const Title = styled.h2`
 	font-size: var(--fz-small);

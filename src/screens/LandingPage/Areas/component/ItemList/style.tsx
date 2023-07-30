@@ -4,6 +4,7 @@ import styled from "styled-components";
 // Styled Components
 export const ItemListS = styled.div`
 	--columns-number: 4;
+	width: 100%;
 
 	display: grid;
 	grid-template-columns: repeat(var(--columns-number), 1fr);
