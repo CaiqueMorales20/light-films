@@ -30,7 +30,7 @@ export default function Menu() {
 				id="menu"
 				ref={menuRef}
 				data-opened={openedMenu}
-				className="md:static md:bg-transparent md:translate-x-0 md:flex-row md:w-max flex items-center justify-center gap-8 text-sm flex-col absolute top-0 left-0 bg-primary-500 w-[80vw] h-full -translate-x-full duration-300 data-[opened=true]:translate-x-0 data-[opened=true]:bg-primary-400 z-20"
+				className="md:static md:bg-transparent md:translate-x-0 md:flex-row md:w-max flex items-center justify-center gap-8 text-sm flex-col fixed top-0 left-0 bg-primary-500 w-[80vw] h-full -translate-x-full duration-300 data-[opened=true]:translate-x-0 data-[opened=true]:bg-primary-400 z-20 isolate"
 			>
 				{HeaderData.map((item, index) => {
 					// Rendering

@@ -28,7 +28,7 @@ export default function Header() {
 	// Rendering
 	return (
 		<HeaderContext.Provider value={{ openedMenu, setOpenedMenu }}>
-			<header className="flex justify-between gap-4 bg-primary-400">
+			<header className="flex justify-between gap-4 bg-primary-400 relative isolate z-10">
 				<nav className="flex items-center justify-between m-auto h-[5rem] w-[90%] ">
 					<Logo />
 					<Menu />

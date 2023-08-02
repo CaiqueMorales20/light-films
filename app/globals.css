@@ -16,3 +16,9 @@ body.menu-open{
   height: 100vh;
   overflow: hidden;
 }
+
+button{
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

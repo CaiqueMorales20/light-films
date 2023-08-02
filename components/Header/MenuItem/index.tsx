@@ -9,7 +9,7 @@ export default function MenuItem(props: HeaderType) {
 		<div>
 			<li
 				id="menu-item"
-				className="text-white cursor-pointer font-semibold"
+				className="text-white cursor-pointer font-medium"
 				onClick={props.onClick}
 			>
 				{props.name}
