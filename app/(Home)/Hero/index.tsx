@@ -6,7 +6,7 @@ export default function Hero() {
 	// Rendering
 	return (
 		<section className="h-[100vh]  mt-[calc(-5rem)] bg-[url(/hero-bg.jpg)] bg-center bg-cover flex items-center justify-center ">
-			<div className=" max-w-[90%] text-center flex flex-col gap-8 items-center">
+			<div className="max-w-[90%] text-center flex flex-col gap-8 items-center">
 				<div className="flex flex-col gap-3">
 					<h1 className="text-white text-xl font-bold max-w-[62.5rem]">
 						Proteção e Estilo em um lugar: Insulfilm Arquitetônico de Qualidade
@@ -16,7 +16,7 @@ export default function Hero() {
 						Design
 					</h2>
 				</div>
-				<Button />
+				<Button text="Ver mais" />
 			</div>
 		</section>
 	);
