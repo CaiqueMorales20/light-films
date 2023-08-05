@@ -25,8 +25,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={montserrat.className}>
+		<html lang="en" className="max-w-[100vw] overflow-x-hidden">
+			<body
+				className={montserrat.className + "max-w-[100vw] overflow-x-hidden"}
+			>
 				<Header />
 				{children}
 			</body>
