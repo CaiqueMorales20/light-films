@@ -1,3 +1,4 @@
+import Benefits from "./(Home)/Benefits";
 import Hero from "./(Home)/Hero";
 import Occupation from "./(Home)/Occupation";
 
@@ -7,6 +8,7 @@ export default function Home() {
 		<main>
 			<Hero />
 			<Occupation />
+			<Benefits />
 		</main>
 	);
 }
