@@ -1,6 +1,7 @@
 import Benefits from "./(Home)/Benefits";
 import Hero from "./(Home)/Hero";
 import Occupation from "./(Home)/Occupation";
+import Projects from "./(Home)/Projects";
 
 // Functional Component
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 			<Hero />
 			<Occupation />
 			<Benefits />
+			<Projects />
 		</main>
 	);
 }

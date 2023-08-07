@@ -29,6 +29,9 @@ module.exports = {
         'primary-500': '#243c5a',
         'primary-400': '#1b3748',
       },
+      dropShadow: {
+        '3xl': '0 3px 5px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
