@@ -32,14 +32,14 @@ export default function Header() {
 				<nav className="flex items-center justify-between m-auto h-[5rem] w-[90%] ">
 					<Logo />
 					<Menu />
-					<div className="width-[32px]">
+					<div className="width-[32px] md:hidden">
 						<Image
 							src={Hamburger}
 							width={32}
 							height={32}
 							alt="Abrir menu"
 							onClick={() => setOpenedMenu(!openedMenu)}
-							className="md:hidden cursor-pointer"
+							className=" cursor-pointer"
 							priority
 						/>
 					</div>
