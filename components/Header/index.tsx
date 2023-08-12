@@ -32,15 +32,17 @@ export default function Header() {
 				<nav className="flex items-center justify-between m-auto h-[5rem] w-[90%] ">
 					<Logo />
 					<Menu />
-					<Image
-						src={Hamburger}
-						width={32}
-						height={32}
-						alt="Abrir menu"
-						onClick={() => setOpenedMenu(!openedMenu)}
-						className="md:hidden cursor-pointer"
-						priority
-					/>
+					<div className="width-[32px]">
+						<Image
+							src={Hamburger}
+							width={32}
+							height={32}
+							alt="Abrir menu"
+							onClick={() => setOpenedMenu(!openedMenu)}
+							className="md:hidden cursor-pointer"
+							priority
+						/>
+					</div>
 				</nav>
 			</header>
 		</HeaderContext.Provider>

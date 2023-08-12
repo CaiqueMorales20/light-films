@@ -47,7 +47,7 @@ export default function Menu() {
 			<div
 				id="overlay"
 				data-opened={openedMenu}
-				className="md:hidden data-[opened=false]:-z-10 data-[opened=false]:bg-transparent z-10 w-full h-full inset-0 fixed bg-black/[0.6]"
+				className="md:hidden data-[opened=false]:hidden data-[opened=false]:bg-transparent z-10 w-full h-full inset-0 fixed bg-black/[0.6]"
 			></div>
 		</>
 	);

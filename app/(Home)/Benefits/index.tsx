@@ -9,7 +9,7 @@ export default function Benefits() {
 	return (
 		<Section colored>
 			<Title colored text="Benefícios" />
-			<div className="grid grid-cols-2 gap-x-24">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-24">
 				<div className="flex flex-col gap-8">
 					<h3 className="text-white text-medium font-bold">
 						Descubra os Benefícios do Insulfilm para Sua Casa, Comércio e Mais!
