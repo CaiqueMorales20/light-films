@@ -1,3 +1,4 @@
+import Whatsapp from "@/components/Whatsapp";
 import Benefits from "./(Home)/Benefits";
 import Hero from "./(Home)/Hero";
 import Occupation from "./(Home)/Occupation";
@@ -13,6 +14,7 @@ export default function Home() {
 			<Benefits />
 			<Projects />
 			<Testimonials />
+			<Whatsapp />
 		</main>
 	);
 }

@@ -13,9 +13,17 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 // SEO
 export const metadata: Metadata = {
-	title: "Light Films",
+	title: "Light Films - Privacidade, Proteção e Estilo em Vidros",
+	robots: "noindex, nofollow",
 	description:
-		"Descubra os incríveis benefícios da aplicação de insulfilm em sua casa, comércio ou escritório. Reduza o calor, bloqueie os raios UV prejudiciais, aumente a privacidade e fortaleça a segurança de suas janelas. Transforme seu espaço em um ambiente mais confortável, protegido e eficiente com o insulfilm. Saiba mais!",
+		"Descubra os benefícios da aplicação de insulfilm: reduza o calor, bloqueie raios UV, aumente a privacidade e fortaleça a segurança. Transforme seu espaço em um ambiente mais confortável e protegido. Saiba mais!",
+	authors: [{ name: "Caique Morales", url: "https://caiquemorales.com/" }],
+	publisher: "Vercel",
+	keywords:
+		"Insufilm, Proteção solar, Aplicação de insulfilm, Projetos, Privacidade",
+	alternates: {
+		canonical: "https://light-films.vercel.app/",
+	},
 };
 
 // Functional Component
@@ -25,10 +33,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className="max-w-[100vw] overflow-x-hidden">
-			<body
-				className={montserrat.className + "max-w-[100vw] overflow-x-hidden"}
-			>
+		<html lang="pt-br" className="max-w-[100vw] overflow-x-hidden">
+			<body className={montserrat.className}>
 				<Header />
 				{children}
 			</body>

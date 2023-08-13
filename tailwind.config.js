@@ -31,6 +31,15 @@ module.exports = {
       },
       dropShadow: {
         '3xl': '0 3px 5px rgba(0, 0, 0, 0.3)',
+      },
+      animation: {
+        'pulse-grown': 'pulse2 3s linear infinite',
+      },
+      keyframes: {
+        pulse2: {
+          '0%, 100%': { scale: '1' },
+          '50%': { scale: '1.1' },
+        }
       }
     },
   },
