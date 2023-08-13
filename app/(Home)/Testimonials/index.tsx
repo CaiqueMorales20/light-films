@@ -1,12 +1,17 @@
+// Imported Components
 import Section from "@/components/Section";
-import Image from "next/image";
+import Testimonial from "./Testimonial";
 
 // Functional Component
 export default function Testimonials() {
 	// Rendering
 	return (
 		<Section title="Depoimentos" colored>
-			<Image src="/quote.png" alt="Depoimento" width={1000} height={1000} />
+			<div className="grid grid-cols-3 gap-8">
+				<Testimonial />
+				<Testimonial />
+				<Testimonial />
+			</div>
 		</Section>
 	);
 }
