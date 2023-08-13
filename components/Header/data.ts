@@ -5,5 +5,5 @@ export const HeaderData = [
 	{ name: "Benefícios", link: "benefits" },
 	{ name: "Projetos", link: "projects" },
 	{ name: "Clientes", link: "testimonials" },
-	{ name: "Contato", link: "testimonials" },
+	{ name: "Contato", link: "contact" },
 ];

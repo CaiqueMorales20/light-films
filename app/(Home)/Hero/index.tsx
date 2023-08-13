@@ -19,7 +19,7 @@ export default function Hero() {
 						Design
 					</h2>
 				</div>
-				<Button text="Ver mais" />
+				<Button text="Ver mais" navigate="occupation" />
 			</div>
 		</section>
 	);

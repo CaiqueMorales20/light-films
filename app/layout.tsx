@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	title: "Light Films - Privacidade, Proteção e Estilo em Vidros",
 	robots: "index, follow",
 	description:
-		"Descubra os benefícios da aplicação de insulfilm: reduza o calor, bloqueie raios UV, aumente a privacidade e fortaleça a segurança. Transforme seu espaço em um ambiente mais confortável e protegido. Saiba mais!",
+		"Explore os benefícios do insulfilm: diminua o calor, bloqueie raios UV, aumente a privacidade e reforce a segurança. Crie um ambiente mais confortável e seguro. Saiba mais!",
 	authors: [{ name: "Caique Morales", url: "https://caiquemorales.com/" }],
 	publisher: "Vercel",
 	keywords:

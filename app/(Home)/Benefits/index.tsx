@@ -24,7 +24,7 @@ export default function Benefits() {
 				</div>
 				<Image
 					src="/benefits-banner.jpg"
-					alt="Image"
+					alt="Profissionais aplicando insufilm"
 					width={1000}
 					height={1000}
 					className="w-full rounded-lg"

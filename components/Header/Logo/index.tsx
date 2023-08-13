@@ -2,7 +2,7 @@
 export default function Logo() {
 	// Rendering
 	return (
-		<a href="/" id="logo" className="text-white font-bold">
+		<a href="/" title="Light Films" id="logo" className="text-white font-bold">
 			Light Films
 		</a>
 	);
