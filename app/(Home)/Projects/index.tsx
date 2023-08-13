@@ -13,7 +13,6 @@ import {
 
 // Imported Components
 import Section from "@/components/Section";
-import Title from "@/components/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 
@@ -43,7 +42,7 @@ export default function Projects() {
 
 	// Rendering
 	return (
-		<Section title="Nossos projetos">
+		<Section id="projects" title="Nossos projetos">
 			<div className="relative">
 				<Image
 					src="/arrow-prev.svg"

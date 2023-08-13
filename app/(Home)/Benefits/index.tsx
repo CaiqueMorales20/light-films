@@ -1,13 +1,12 @@
 // Imported Components
 import Section from "@/components/Section";
-import Title from "@/components/Title";
 import Image from "next/image";
 
 // Functional Component
 export default function Benefits() {
 	// Rendering
 	return (
-		<Section title="Benefícios" colored>
+		<Section id="benefits" title="Benefícios" colored>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-24">
 				<div className="flex flex-col gap-8">
 					<h3 className="text-white text-medium font-bold">

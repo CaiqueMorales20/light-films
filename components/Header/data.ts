@@ -1,9 +1,9 @@
 // Data
 export const HeaderData = [
-	{ name: "Home", link: "occupation" },
+	{ name: "Home", link: "home" },
 	{ name: "Atuação", link: "occupation" },
-	{ name: "Benefícios", link: "occupation" },
-	{ name: "Projetos", link: "occupation" },
-	{ name: "Clientes", link: "occupation" },
-	{ name: "Contato", link: "occupation" },
+	{ name: "Benefícios", link: "benefits" },
+	{ name: "Projetos", link: "projects" },
+	{ name: "Clientes", link: "testimonials" },
+	{ name: "Contato", link: "testimonials" },
 ];

@@ -7,7 +7,7 @@ import Item from "./Item";
 export default function Occupation() {
 	// Rendering
 	return (
-		<Section title="Áreas de aplicação">
+		<Section id="occupation" title="Áreas de aplicação">
 			<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 				<Item title="Residências" img="/house.png" />
 				<Item title="Escritório" img="/office.png" />

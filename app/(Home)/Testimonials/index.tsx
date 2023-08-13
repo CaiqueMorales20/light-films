@@ -6,7 +6,7 @@ import Testimonial from "./Testimonial";
 export default function Testimonials() {
 	// Rendering
 	return (
-		<Section title="Depoimentos" colored>
+		<Section id="testimonials" title="Depoimentos" colored>
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
 				<Testimonial />
 				<Testimonial />

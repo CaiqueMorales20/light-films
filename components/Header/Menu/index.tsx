@@ -11,6 +11,7 @@ import { HeaderData } from "../data";
 // Context
 import { HeaderContextType } from "../type";
 import { HeaderContext } from "..";
+import { useScrollTo } from "@/utils/useScrollTo";
 
 // Functional Component
 export default function Menu() {

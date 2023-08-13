@@ -2,8 +2,8 @@
 export default function Logo() {
 	// Rendering
 	return (
-		<h1 id="logo" className="text-white font-bold">
+		<a href="/" id="logo" className="text-white font-bold">
 			Light Films
-		</h1>
+		</a>
 	);
 }
