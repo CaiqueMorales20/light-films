@@ -43,8 +43,7 @@ export default function Projects() {
 
 	// Rendering
 	return (
-		<Section>
-			<Title text="Nossos projetos" />
+		<Section title="Nossos projetos">
 			<div className="relative">
 				<Image
 					src="/arrow-prev.svg"
