@@ -14,7 +14,7 @@ export default function Whatsapp() {
 				alt="Enviar mensagem pelo Whatsapp"
 				width={512}
 				height={512}
-				className="h-16 w-16"
+				className="w-12 h-12 md:h-16 md:w-16"
 			/>
 		</a>
 	);

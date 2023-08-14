@@ -11,7 +11,7 @@ function scrollToElement(elementId: string) {
 			const offsetPosition = absoluteElementTop + 50;
 
 			window.scrollTo({
-				top: offsetPosition,
+				top: elementId === "home" ? 0 : offsetPosition,
 				behavior: "smooth",
 			});
 		}

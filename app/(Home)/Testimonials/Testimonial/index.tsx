@@ -27,8 +27,8 @@ export default function Testimonial() {
 					height={517}
 				/>
 				<div className="">
-					<h4 className="text-primary-400 text-sm font-medium">Pessoa 1</h4>
-					<h5 className="text-gray-500 text-sm">Empresária</h5>
+					<h3 className="text-primary-400 text-sm font-medium">Pessoa 1</h3>
+					<h4 className="text-gray-500 text-sm">Empresária</h4>
 				</div>
 			</div>
 		</div>

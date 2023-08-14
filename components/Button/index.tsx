@@ -1,6 +1,9 @@
+// Client Side
 "use client";
 
+// Imports
 import { useScrollTo } from "@/utils/useScrollTo";
+
 // Types
 import { ButtonType } from "./types";
 
