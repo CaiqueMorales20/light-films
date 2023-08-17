@@ -5,11 +5,17 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "../Modal";
+import { useUpdateEffect } from "@/utils/useUpdateEffect";
 
 // Functional Component
 export default function Form() {
 	// Variables
 	const [modalOpened, setModalOpened] = useState(false);
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
 	const form = useRef<any>();
 
 	// Functions
@@ -24,7 +30,8 @@ export default function Form() {
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
+					setFormData({ name: "", email: "", message: "" });
+					setModalOpened(true);
 				},
 				(error) => {
 					console.log(error.text);
@@ -35,7 +42,7 @@ export default function Form() {
 	// Rendering
 	return (
 		<>
-			{modalOpened && <Modal />}
+			{modalOpened && <Modal onClick={() => setModalOpened(false)} />}
 			<form
 				ref={form}
 				onSubmit={sendEmail}
@@ -47,6 +54,8 @@ export default function Form() {
 					type="text"
 					name="user_name"
 					required
+					value={formData.name}
+					onChange={(e) => setFormData({ ...formData, name: e.target.value })}
 				/>
 				<label className="text-white mb-2 md:mb-4 font-semibold">Email</label>
 				<input
@@ -54,6 +63,8 @@ export default function Form() {
 					type="email"
 					name="user_email"
 					required
+					value={formData.email}
+					onChange={(e) => setFormData({ ...formData, email: e.target.value })}
 				/>
 				<label className="text-white mb-2 md:mb-4 font-semibold">
 					Mensagem
@@ -62,11 +73,12 @@ export default function Form() {
 					className="mb-4 md:mb-8 px-4 py-2 h-44 bg-white border-primary-400 border-2 rounded-md resize-none"
 					name="message"
 					required
+					value={formData.message}
+					onChange={(e) =>
+						setFormData({ ...formData, message: e.target.value })
+					}
 				/>
-				<button
-					onClick={() => setModalOpened(true)}
-					className="align w-full md:w-max rounded-[1rem] border-solid bg-white border-[2px] hover:border-white hover:bg-primary-400 text-primary-400 hover:text-white duration-300"
-				>
+				<button className="align w-full md:w-max rounded-[1rem] border-solid bg-white border-[2px] hover:border-white hover:bg-primary-400 text-primary-400 hover:text-white duration-300">
 					<p className="text-sm font-bold uppercase p-[1.125em_5.125em]">
 						Enviar
 					</p>
