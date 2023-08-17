@@ -7,7 +7,7 @@ export default function Modal(props: ModalType) {
 	// Rendering
 	return (
 		<div className="bg-black/60 w-full h-full fixed flex items-center justify-center inset-0 z-50">
-			<div className="py-10 px-20 max-w-2xl rounded-2xl bg-white flex flex-col gap-10 items-center justify-center">
+			<div className="py-10 px-20 max-w-[90%] md:max-w-2xl rounded-2xl bg-white flex flex-col gap-10 items-center justify-center">
 				<div className="flex flex-col gap-4">
 					<p className="text-primary-400 font-medium text-center text-base">
 						Agradecemos por entrar em contato conosco.

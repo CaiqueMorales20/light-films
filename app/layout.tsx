@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 
 // Stylesheets
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 // Font
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -38,6 +39,7 @@ export default function RootLayout({
 				<div className="max-w-[100vw] overflow-x-hidden">
 					<Header />
 					{children}
+					<Footer />
 				</div>
 			</body>
 		</html>
