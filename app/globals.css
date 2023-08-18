@@ -36,19 +36,6 @@ img{
   height: auto;
 }
 
-
-
-/* Adicione este código ao seu arquivo de estilo CSS */
-img[title]{
-  position: relative;
-}
-
-img[title]::after {
-  content: attr(title);
-  position: absolute;
-  left: -9999px;
-}
-
 .aspect-image{
   aspect-ratio: 2 / 1;
 }

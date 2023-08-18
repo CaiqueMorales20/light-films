@@ -21,6 +21,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Button from "@/components/Button";
+import Link from "next/link";
 
 // Functional Component
 export default function Projects() {
@@ -43,92 +45,121 @@ export default function Projects() {
 	// Rendering
 	return (
 		<Section id="projects" title="Nossos projetos">
-			<div className="relative">
-				<Image
-					src="/arrow-prev.svg"
-					width={48}
-					height={48}
-					className="absolute top-[50%] -translate-y-[50%] w-12 z-40 -left-8 cursor-pointer drop-shadow-3xl"
-					alt="Slide anterior"
-					onClick={() => handlePrevSlide()}
-				/>
-				<Swiper
-					ref={swiperRef}
-					modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-					spaceBetween={50}
-					slidesPerView={1}
-					grabCursor
-					autoplay={{
-						delay: 2500,
-						disableOnInteraction: false,
-					}}
-					loop={true}
-					breakpoints={{
-						568: {
-							slidesPerView: 1,
-						},
-						1080: {
-							slidesPerView: 3,
-						},
-					}}
-				>
-					<SwiperSlide>
-						<Image
-							src="/atelie.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src="/lacerda.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src="/riachuelo.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src="/atelie.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src="/lacerda.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Image
-							src="/riachuelo.png"
-							alt="Atelie.png"
-							width={10000}
-							height={10000}
-						/>
-					</SwiperSlide>
-				</Swiper>
-				<Image
-					src="/arrow-next.svg"
-					width={48}
-					height={48}
-					className="absolute top-[50%] -translate-y-[50%] w-12 z-40 -right-8 cursor-pointer drop-shadow-3xl"
-					alt="Próximo slide"
-					onClick={() => handleNextSlide()}
-				/>
+			<div className="flex flex-col gap-10">
+				<div className="relative">
+					<Image
+						src="/arrow-prev.svg"
+						width={48}
+						height={48}
+						className="absolute top-[50%] -translate-y-[50%] w-12 z-40 -left-8 cursor-pointer drop-shadow-3xl"
+						alt="Slide anterior"
+						onClick={() => handlePrevSlide()}
+					/>
+					<Swiper
+						ref={swiperRef}
+						modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+						spaceBetween={50}
+						slidesPerView={1}
+						grabCursor
+						autoplay={{
+							delay: 2500,
+							disableOnInteraction: false,
+						}}
+						loop={true}
+						breakpoints={{
+							568: {
+								slidesPerView: 1,
+							},
+							1080: {
+								slidesPerView: 3,
+							},
+						}}
+					>
+						<SwiperSlide>
+							<Image
+								src="/atelie.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/lacerda.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/riachuelo.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/atelie.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/lacerda.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/riachuelo.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/riachuelo.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Image
+								src="/riachuelo.png"
+								alt="Atelie.png"
+								width={10000}
+								height={10000}
+							/>
+						</SwiperSlide>
+					</Swiper>
+					<Image
+						src="/arrow-next.svg"
+						width={48}
+						height={48}
+						className="absolute top-[50%] -translate-y-[50%] w-12 z-40 -right-8 cursor-pointer drop-shadow-3xl"
+						alt="Próximo slide"
+						onClick={() => handleNextSlide()}
+					/>
+				</div>
+				<div className="self-center">
+					<Link
+						href="/projetos"
+						title="Ver todos os projetos"
+						className="block w-max rounded-[1rem] bg-primary-400 hover:bg-white text-white hover:text-primary-400  border-2 border-solid border-primary-400 duration-300"
+					>
+						<p className="text-sm font-bold uppercase p-[1.125em_5.125em]">
+							Ver todos projetos
+						</p>
+					</Link>
+				</div>
 			</div>
 		</Section>
 	);
