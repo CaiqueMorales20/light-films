@@ -21,8 +21,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+// Type
+interface SwiperCType {
+  photos: any[]
+}
+
 // Functional Component
-export default function SwiperC() {
+export default function SwiperC(props: SwiperCType) {
 	// Variables
 	const swiperRef = useRef<any | null>(null);
 
@@ -56,6 +61,7 @@ export default function SwiperC() {
 				spaceBetween={30}
 				slidesPerView={1}
 				grabCursor
+        loop
 				autoplay={{
 					delay: 2500,
 					disableOnInteraction: false,
@@ -69,70 +75,28 @@ export default function SwiperC() {
 					},
 				}}
 			>
-				<SwiperSlide>
-					<Image
-						src="/atelie.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/lacerda.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/riachuelo.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/atelie.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/lacerda.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/riachuelo.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/riachuelo.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image
-						src="/riachuelo.png"
-						alt="Atelie.png"
-						width={10000}
-						height={10000}
-					/>
-				</SwiperSlide>
+				{props.photos.map((photo, index) => (
+          <SwiperSlide key={'slider' +  index}>
+            <Image
+              src={photo.path}
+              alt={photo.alt}
+              className="object-cover h-52"
+              width={250}
+              height={250}
+            />
+          </SwiperSlide>
+        ))}
+				{props.photos.map((photo, index) => (
+          <SwiperSlide key={'slider 2' +  index}>
+            <Image
+              src={photo.path}
+              alt={photo.alt}
+              className="object-cover h-52"
+              width={800}
+              height={800}
+            />
+          </SwiperSlide>
+        ))}
 			</Swiper>
 			<Image
 				src="/arrow-next.svg"

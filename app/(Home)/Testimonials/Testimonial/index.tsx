@@ -22,8 +22,8 @@ export default function Testimonial(props: TestimonialsType) {
 			<div className="flex items-center gap-4">
 				<Image
 					className="rounded-full w-8 md:w-12"
-					src="/testimonials/person-2.png"
-					alt="Pessoa 1"
+					src={props.photoPath}
+					alt={props.name}
 					width={517}
 					height={517}
 				/>

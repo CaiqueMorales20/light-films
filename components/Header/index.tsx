@@ -2,7 +2,7 @@
 "use client";
 
 // Imports
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useUpdateEffect } from "@/utils/useUpdateEffect";
 
 // Icons
@@ -10,6 +10,8 @@ import Hamburger from "@/public/menu.png";
 import Image from "next/image";
 import Menu from "./Menu";
 import Logo from "./Logo";
+
+// Type
 import { HeaderContextType } from "./type";
 
 // Context
@@ -20,7 +22,6 @@ export default function Header() {
 	// Variables
 	const [openedMenu, setOpenedMenu] = useState(false);
 
-	// Functions
 	useUpdateEffect(() => {
 		document.body.classList.toggle("menu-open");
 	}, [openedMenu]);

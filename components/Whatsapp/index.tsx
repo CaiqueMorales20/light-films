@@ -5,7 +5,7 @@ export default function Whatsapp() {
 	// Rendering
 	return (
 		<a
-			href="https://wa.me/+5511980842542?text=Olá,%20vim%20pelo%20seu%20site,%20poderiamos%20ter%20uma%20conversa?"
+			href="https://wa.me/+5511981696933?text=Olá,%20vim%20pelo%20seu%20site,%20poderiamos%20ter%20uma%20conversa?"
 			title="Whatsapp"
 			className="fixed z-50 bottom-10 right-10 animate-pulse-grown"
 		>

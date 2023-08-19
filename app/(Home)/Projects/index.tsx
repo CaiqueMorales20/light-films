@@ -123,22 +123,6 @@ export default function Projects() {
 								height={10000}
 							/>
 						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src="/riachuelo.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src="/riachuelo.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
-							/>
-						</SwiperSlide>
 					</Swiper>
 					<Image
 						src="/arrow-next.svg"

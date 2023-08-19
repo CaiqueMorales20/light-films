@@ -1,4 +1,5 @@
 // Imports
+import { useRouter } from "next/router";
 import { HeaderType } from "../type";
 import { useScrollTo } from "@/utils/useScrollTo";
 

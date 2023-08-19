@@ -15,6 +15,7 @@ export default function Testimonials() {
 						name={testimonial.name}
 						role={testimonial.role}
 						testimonial={testimonial.testimonial}
+            photoPath={testimonial.photoPath}
 						key={index}
 					/>
 				))}
