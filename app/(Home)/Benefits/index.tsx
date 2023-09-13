@@ -10,7 +10,7 @@ export default function Benefits() {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-24">
 				<div className="flex flex-col gap-8">
 					<h3 className="text-white text-medium font-bold">
-						Descubra os Benefícios do Insulfilm para Sua Casa, Comércio e Mais!
+						Descubra os Benefícios da Películas para Sua Casa, Comércio e Mais!
 					</h3>
 					<p className="text-white text-base text-justify">
 						Descubra o conforto e a proteção que o insulfilm pode trazer para o
