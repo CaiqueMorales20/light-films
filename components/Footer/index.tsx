@@ -9,7 +9,7 @@ export default function Footer() {
 				<div className="flex flex-col items-center gap-2">
 					<a className="text-white font-bold text-lg">Light Films</a>
 					<p className="text-white text-sm max-w-sm text-center mb-3">
-						Proteção e Estilo em um lugar: Insulfilm Arquitetônico de Qualidade
+						Proteção e Estilo em um lugar: Película Arquitetônica de Qualidade
 					</p>
 					<div>
 						<a
