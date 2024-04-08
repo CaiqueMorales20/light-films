@@ -5,6 +5,7 @@ import Link from "next/link";
 // Types
 interface ProjectType {
 	title: string;
+  slug: string
 	image: string;
 	id: number;
 }
@@ -13,7 +14,7 @@ interface ProjectType {
 export default function Project(props: ProjectType) {
 	// Rendering
 	return (
-		<Link href={`/projetos/${props.title.toLocaleLowerCase()}`}>
+		<Link href={`/projetos/${props.slug}`}>
 			<div className="cursor-pointer bg-primary-400 relative">
         <div>
           <Image
