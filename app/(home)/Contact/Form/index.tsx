@@ -5,7 +5,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "../Modal";
-import { useUpdateEffect } from "@/utils/useUpdateEffect";
 
 // Functional Component
 export default function Form() {
@@ -13,6 +12,7 @@ export default function Form() {
 	const [modalOpened, setModalOpened] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
+		phone: "",
 		email: "",
 		message: "",
 	});
@@ -30,7 +30,7 @@ export default function Form() {
 			)
 			.then(
 				(result) => {
-					setFormData({ name: "", email: "", message: "" });
+					setFormData({ name: "", phone: "", email: "", message: "" });
 					setModalOpened(true);
 				},
 				(error) => {
@@ -56,6 +56,23 @@ export default function Form() {
 					required
 					value={formData.name}
 					onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+				/>
+				<label className="text-white mb-2 md:mb-4 font-semibold">Celular</label>
+				<input
+					className="bg-white mb-4 md:mb-8 px-4 py-2 border-primary-400 border-2 rounded-md"
+					type="text"
+					name="user_phone"
+					required
+					value={formData.phone}
+					onChange={(e) => {
+						let value = e.target.value;
+						value = value.replace(/\D/g, "");
+						value = value.replace(/^(\d{2})(\d)/g, "($1) $2");
+						value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+						if (value.length <= 15) { // Maximum length of the phone number format
+								setFormData({ ...formData, phone: value });
+						}
+				}}
 				/>
 				<label className="text-white mb-2 md:mb-4 font-semibold">Email</label>
 				<input

@@ -62,7 +62,7 @@ export default function Projects() {
 						slidesPerView={1}
 						grabCursor
 						autoplay={{
-							delay: 2500,
+							delay: 2000,
 							disableOnInteraction: false,
 						}}
 						loop={true}
@@ -77,50 +77,56 @@ export default function Projects() {
 					>
 						<SwiperSlide>
 							<Image
-								src="/atelie.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
+								className="w-full h-auto object-cover"
+								src="/projects/porto-seguro/porto-1.jpg"
+								alt="Porto Seguro"
+								width={1000}
+								height={1000}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/lacerda.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
+								className="w-full h-auto object-cover"
+								src="/projects/sabesp/sabesp-1-1.jpg"
+								alt="Sabesp"
+								width={1000}
+								height={1000}
+							/>
+						</SwiperSlide>
+						{/* Repeat */}
+						<SwiperSlide>
+							<Image
+								className="w-full h-auto object-cover"
+								src="/projects/senai/senai-1.jpg"
+								alt="Senai"
+								width={1000}
+								height={1000}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/riachuelo.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
+								className="w-full h-auto object-cover"
+								src="/projects/porto-seguro/porto-1.jpg"
+								alt="Porto Seguro"
+								width={1000}
+								height={1000}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/atelie.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
+								className="w-full h-auto object-cover"
+								src="/projects/sabesp/sabesp-1-1.jpg"
+								alt="Sabesp"
+								width={1000}
+								height={1000}
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/lacerda.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src="/riachuelo.png"
-								alt="Atelie.png"
-								width={10000}
-								height={10000}
+								src="/projects/senai/senai-1.jpg"
+								alt="Senai"
+								width={1000}
+								height={1000}
 							/>
 						</SwiperSlide>
 					</Swiper>

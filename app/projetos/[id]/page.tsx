@@ -13,15 +13,7 @@ export default function Page({ params }: { params: { id: string } }) {
 	const project = ProjectsData.find(
 		(project) => project.slug === params.id
 	);
-
-	// // Function
-	// function invariant(value: unknown): asserts value {
-	// 	if (value) return;
-
-	// 	throw new Error("Invariant violation");
-	// }
-
-	// invariant(project);]
+	
 	if (!project) return <p>No project</p>
 
 	// Rendering

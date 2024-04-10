@@ -1,10 +1,10 @@
 import Whatsapp from "@/components/Whatsapp";
-import Benefits from "./(Home)/Benefits";
-import Hero from "./(Home)/Hero";
-import Occupation from "./(Home)/Occupation";
-import Projects from "./(Home)/Projects";
-import Testimonials from "./(Home)/Testimonials";
-import Contact from "./(Home)/Contact";
+import Benefits from "./(home)/Benefits";
+import Hero from "./(home)/Hero";
+import Occupation from "./(home)/Occupation";
+import Projects from "./(home)/Projects";
+import Testimonials from "./(home)/Testimonials";
+import Contact from "./(home)/Contact";
 
 // Functional Component
 export default function Home() {

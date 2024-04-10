@@ -25,6 +25,7 @@ export default function Footer() {
 							/>
 						</a>
 					</div>
+					<p className="text-center text-white text-base leading-relaxed font-light mt-2">(11) 4259-3003</p>
 				</div>
 			</div>
 			<p className="text-gray-400 text-sm absolute left-1/2 -translate-x-1/2 bottom-5 text-center">
