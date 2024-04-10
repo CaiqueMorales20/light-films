@@ -97,7 +97,7 @@ export default function Projects() {
 						<SwiperSlide>
 							<Image
 								className="w-full h-auto object-cover"
-								src="/projects/senai/senai-1.jpg"
+								src="/projects/senai/senai-1-1.jpg"
 								alt="Senai"
 								width={1000}
 								height={1000}
@@ -123,7 +123,7 @@ export default function Projects() {
 						</SwiperSlide>
 						<SwiperSlide>
 							<Image
-								src="/projects/senai/senai-1.jpg"
+								src="/projects/senai/senai-1-1.jpg"
 								alt="Senai"
 								width={1000}
 								height={1000}
